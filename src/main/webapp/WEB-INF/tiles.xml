@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC 
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="defaultLayout" template="/WEB-INF/jsp/vehicle_index.jsp" >
+		<put-attribute name="vehicle_banner" value="/WEB-INF/jsp/vehicle_banner.jsp" />
+		<put-attribute name="vehicle_menu_left" value="/WEB-INF/jsp/vehicle_menu_left.jsp" />
+		<put-attribute name="main" value="" />
+	</definition>
+
+	<definition name="vehicle_home" extends="defaultLayout">
+		<put-attribute name="main" value="/WEB-INF/jsp/vehicle_home.jsp" />
+	</definition>
+	
+	<definition name="vehicle_customer_add" extends="defaultLayout">
+		<put-attribute name="main" value="/WEB-INF/jsp/vehicle_customer_add.jsp" />
+	</definition>
+	
+	<definition name="vehicle_customer_display" extends="defaultLayout">
+		<put-attribute name="main" value="/WEB-INF/jsp/vehicle_customer_display.jsp" />
+	</definition>
+	
+	<definition name="vehicle_customer_update" extends="defaultLayout">
+		<put-attribute name="main" value="/WEB-INF/jsp/vehicle_customer_update.jsp" />
+	</definition>
+	
+	<definition name="vehicle_vehicle_add" extends="defaultLayout">
+		<put-attribute name="main" value="/WEB-INF/jsp/vehicle_vehicle_add.jsp" />
+	</definition>
+	
+	<definition name="vehicle_vehicle_display" extends="defaultLayout">
+		<put-attribute name="main" value="/WEB-INF/jsp/vehicle_vehicle_display.jsp" />
+	</definition>
+	
+	<definition name="vehicle_vehicle_update" extends="defaultLayout">
+		<put-attribute name="main" value="/WEB-INF/jsp/vehicle_vehicle_update.jsp" />
+	</definition>
+	
+	<definition name="vehicle_service_add" extends="defaultLayout">
+		<put-attribute name="main" value="/WEB-INF/jsp/vehicle_service_add.jsp" />
+	</definition>
+	
+	<definition name="vehicle_service_display" extends="defaultLayout">
+		<put-attribute name="main" value="/WEB-INF/jsp/vehicle_service_display.jsp" />
+	</definition>
+	
+	<definition name="vehicle_service_update" extends="defaultLayout">
+		<put-attribute name="main" value="/WEB-INF/jsp/vehicle_service_update.jsp" />
+	</definition>
+
+</tiles-definitions>
